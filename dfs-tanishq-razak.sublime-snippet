@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+
+void dfs(int vertex){
+
+    // Take Action on vertex after entering the vertex
+    vis[vertex] = true;
+    for(int child:g[vertex]){
+    if(vis[child])continue;
+    
+    // Take Action on child before entering the child node 
+
+    dfs(child);
+
+    // Take Action on child after exiting child node
+
+    }
+    // Take Action on vertex before exiting the vertex
+
+
+}
+
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dfs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
