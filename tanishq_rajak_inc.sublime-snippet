@@ -1,0 +1,59 @@
+<snippet>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define ull unsigned long long int
+#define ld long double
+#define pb push_back
+#define MOD 1000000007
+#define fi(a,b) for(int i=a;i<b;i++)
+#define fl(a,b) for(int i=b-1;i>=a;i--)
+#define vi vector<int>
+#define vl vector <long long int>
+#define readarray(a,n) for(int i=0;i<n;cin>>a[i++]);
+#define readarrayll(a,n) for(ll i=0;i<n;cin>>a[i++]);
+#define fast ios::sync_with_stdio(false); cin.tie(0)
+#define loop int t;cin>>t;while(t--)
+#define el "\n"
+#define sp " "
+#define mii map<int,int>
+#define pii pair<int,int> 
+ll power(ll x,ll y,ll z) 
+{ 
+   ll ans=1;
+   x=x%z;
+   if(x==0)
+   return 0;
+   while(y>0)
+   {
+       if(y&1)
+       {
+           ans=(ans*x)%z;
+       }
+       y=y>>1;
+           x=(x*x)%z;
+   }
+   return ans;
+}
+int main()
+{
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+
+    loop
+    {
+
+    }
+
+
+  return 0;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>include</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
